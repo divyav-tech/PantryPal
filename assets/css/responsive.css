@@ -1,0 +1,214 @@
+/* Give the layout room to breathe on smaller screens */
+@media(max-width:1000px) {
+    .visual-gallery {
+        grid-template-rows: 125px
+    }
+
+    .inventory-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+}
+
+@media(max-width:760px) {
+    .visual-gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 135px 110px
+    }
+
+    .gallery-large {
+        grid-column: 1/-1
+    }
+
+    .gallery-tall,
+    .gallery-small {
+        transform: none
+    }
+
+    .pantry-photo {
+        height: 250px
+    }
+
+    .welcome-grid {
+        gap: 15px
+    }
+
+    .inventory-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .inventory-card img {
+        height: 125px
+    }
+
+    .page-intro {
+        flex-wrap: wrap
+    }
+
+    .pantry-intro-photo {
+        width: 130px;
+        height: 95px
+    }
+
+    .shopping-hero-image {
+        width: 135px;
+        height: 110px
+    }
+
+    .recipe-cover {
+        grid-template-columns: 1fr;
+        padding: 23px
+    }
+
+    .recipe-cover-art {
+        height: 190px
+    }
+
+    .recipe-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .recipe-card img {
+        height: 120px
+    }
+
+    .meal-table {
+        min-width: 580px
+    }
+}
+
+
+/* Pantry inventory actions and expanded filters */
+.filter-bar {
+    flex-wrap: wrap;
+}
+
+.filter-bar select {
+    max-width: 190px;
+}
+
+.inventory-card {
+    position: relative;
+}
+
+.inventory-card .inventory-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 8px 0;
+}
+
+.inventory-card .inventory-meta small {
+    background: #f5efe5;
+    border-radius: 20px;
+    padding: 4px 8px;
+    color: #665d50;
+}
+
+.inventory-card .inventory-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.inventory-actions button {
+    border: 1px solid #d9cdbb;
+    border-radius: 18px;
+    background: #fffaf2;
+    padding: 7px 12px;
+    cursor: pointer;
+    color: #51483d;
+    font: inherit;
+    font-size: 13px;
+}
+
+.inventory-actions button:hover {
+    background: #f3e8d8;
+}
+
+.inventory-actions .delete-product {
+    color: #9b4b48;
+}
+
+.inventory-empty {
+    grid-column: 1/-1;
+}
+
+#productFormMessage {
+    min-height: 1.2em;
+}
+
+/* =================================
+   PANTRYPAL CUSTOM DROPDOWNS
+================================= */
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: #FFFCF6;
+    color: #665447;
+
+    border: 1px solid #E8D9C8;
+    border-radius: 12px;
+
+    padding: 11px 38px 11px 14px;
+    min-height: 42px;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+
+    cursor: pointer;
+    outline: none;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23A77D62' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-position: right 13px center;
+    background-size: 15px;
+    
+    transition: all 0.2s ease;
+}
+
+select:hover {
+    border-color: #D6B99D;
+    background-color: #FFF9EF;
+}
+
+select:focus {
+    border-color: #D58B70;
+    box-shadow: 0 0 0 3px rgba(213, 139, 112, 0.13);
+}
+
+select option {
+    background-color: #FFFCF6;
+    color: #665447;
+    padding: 10px;
+}
+
+select:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Pantry filters */
+.filter-bar select {
+    min-width: 145px;
+    max-width: 190px;
+}
+
+/* Add/Edit product modal */
+.modal select {
+    width: 100%;
+}
+
+/* Mobile dropdowns */
+@media (max-width: 760px) {
+    .filter-bar select {
+        min-width: 0;
+        max-width: none;
+        flex: 1;
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,11 @@
+/* PantryPal design tokens – original colours and type remain in the preserved theme files. */
+:root {
+  --pp-cream: #fbf7ef;
+  --pp-ink: #3d3933;
+  --pp-sage: #dce8d8;
+  --pp-peach: #f4ddd0;
+  --pp-butter: #f6edc9;
+  --pp-pink: #f2dce0;
+  --pp-blue: #dce9ef;
+  --pp-lavender: #e9e2f1;
+}

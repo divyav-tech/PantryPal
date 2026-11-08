@@ -1,0 +1,733 @@
+/* PANTRYPAL VISUAL REFRESH — photo-led, light and colourful */
+:root {
+    --cream: #fbfaf5;
+    --paper: #fffefa;
+    --tomato: #df805e;
+    --butter: #f1d88d;
+    --leaf: #8da98a;
+    --peach: #f3c9b5;
+    --espresso: #493f38;
+    --blue: #b9d6d2;
+    --line: #e9e5da;
+    --shadow: 0 14px 34px #4b493018
+}
+
+body {
+    background: #fbfaf6;
+    color: #49443e
+}
+
+.sidebar {
+    background: #f4f5ed;
+    border-right: 1px solid #e6e8dd
+}
+
+.brand-mark {
+    background: #91ad8d;
+    border-radius: 13px
+}
+
+.brand-pal {
+    color: #779a78
+}
+
+.nav-link {
+    font-size: 13px;
+    padding: 12px 13px
+}
+
+.nav-link span {
+    width: 27px;
+    font-size: 17px;
+    color: #789a87
+}
+
+.nav-link.active {
+    background: #e3eee4;
+    color: #496e57
+}
+
+.nav-link.active span {
+    color: #527e61
+}
+
+.main-area {
+    padding-left: 48px;
+    padding-right: 48px
+}
+
+h1 {
+    font-size: clamp(40px, 4.3vw, 58px);
+    color: #45423d
+}
+
+h1 em {
+    color: #7e9e82;
+    font-style: normal;
+    font-weight: 600
+}
+
+#page-dashboard h1 em {
+    color: #df805e
+}
+
+h2 {
+    color: #4b4942;
+    font-size: 26px
+}
+
+h3 {
+    color: #4c4942
+}
+
+.eyebrow {
+    color: #84917e;
+    font-size: 10px;
+    letter-spacing: 1.25px
+}
+
+.primary-btn {
+    background: #789b7d;
+    box-shadow: 0 4px 0 #63866a;
+    font-size: 12px
+}
+
+.outline-btn {
+    border-color: #b7cbb8;
+    color: #59765f
+}
+
+.text-btn {
+    color: #6f9677
+}
+
+.welcome-grid {
+    grid-template-columns: .86fr 1.14fr;
+    gap: 34px;
+    min-height: 360px
+}
+
+.pantry-photo {
+    height: 345px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #e8eee2;
+    box-shadow: var(--shadow)
+}
+
+.pantry-photo img,
+.intro-photo img,
+.shopping-hero-image img,
+.side-illustration img,
+.recipe-cover-art img,
+.spread-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block
+}
+
+.photo-caption {
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    padding: 15px 18px;
+    background: #fffefaeb;
+    backdrop-filter: blur(8px);
+    border-radius: 14px;
+    display: grid;
+    gap: 5px
+}
+
+.photo-caption span {
+    font-size: 9px;
+    letter-spacing: 1.4px;
+    color: #78917a;
+    font-weight: 700
+}
+
+.photo-caption b {
+    font: 600 21px var(--serif);
+    color: #4a4941
+}
+
+.section-heading {
+    margin: 34px 0 17px
+}
+
+.section-heading h2 {
+    font-size: 27px
+}
+
+.stats-grid {
+    gap: 15px
+}
+
+.stat-card {
+    border: 1px solid #e8e9df;
+    border-radius: 18px;
+    min-height: 142px;
+    padding: 20px;
+    background: #f0f3e9
+}
+
+.stat-yellow {
+    background: #fbf2d9
+}
+
+.stat-pink {
+    background: #f8e9e2
+}
+
+.stat-blue {
+    background: #e6f0ee
+}
+
+.stat-icon {
+    font-size: 24px;
+    color: #789b7d
+}
+
+.stat-card strong {
+    font-size: 34px;
+    color: #484941
+}
+
+.stat-card small {
+    font-size: 11px;
+    color: #8b8c7e
+}
+
+.paper-panel,
+.quote-panel {
+    border-radius: 19px;
+    border-color: #e8e8df;
+    background: #fffefa;
+    padding: 22px
+}
+
+.quote-panel {
+    background: #e8f0e5;
+    padding: 25px
+}
+
+.quote {
+    font: 500 25px/1.25 var(--serif);
+    color: #506a54;
+    margin: 18px 0
+}
+
+.content-grid {
+    gap: 18px
+}
+
+.panel-title h2 {
+    font-size: 24px
+}
+
+.mini-product,
+.inventory-card {
+    border: 1px solid #e9e8df;
+    border-radius: 17px;
+    background: #fffefa;
+    overflow: hidden;
+    box-shadow: 0 5px 18px #4b49300a
+}
+
+.mini-product {
+    padding: 9px
+}
+
+.mini-product img {
+    height: 120px;
+    border-radius: 11px
+}
+
+.mini-product b {
+    font-size: 12px
+}
+
+.mini-product small {
+    font-size: 10px
+}
+
+.page-intro {
+    margin-bottom: 27px;
+    gap: 28px
+}
+
+.page-intro h1 {
+    margin: 9px 0
+}
+
+.page-intro p {
+    font-size: 14px;
+    color: #858477
+}
+
+.intro-photo {
+    width: 240px;
+    height: 145px;
+    flex: none;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    background: #e7eee3
+}
+
+.expiry-photo {
+    width: 220px
+}
+
+.planner-photo {
+    width: 250px
+}
+
+.usage-photo,
+.account-photo {
+    width: 225px
+}
+
+.filter-bar {
+    gap: 11px
+}
+
+.search-box,
+select {
+    background: #fff;
+    border-color: #e6e6dc;
+    border-radius: 12px
+}
+
+.category-chips {
+    gap: 9px
+}
+
+.chip {
+    font-size: 11px;
+    padding: 9px 14px;
+    background: #f1f4eb;
+    border-color: #e3e8dc;
+    color: #657764
+}
+
+.chip.active {
+    background: #dfece0;
+    border-color: #cbdcc9;
+    color: #4d7355
+}
+
+.inventory-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px
+}
+
+.inventory-card {
+    padding: 10px
+}
+
+.inventory-card img {
+    height: 155px;
+    border-radius: 12px
+}
+
+.inventory-card h3 {
+    font-size: 17px;
+    margin: 12px 5px 5px
+}
+
+.inventory-card p {
+    font-size: 11px;
+    margin: 0 5px 10px
+}
+
+.date-pill {
+    background: #f3edda;
+    color: #88713f;
+    font-size: 10px
+}
+
+.expiry-banner {
+    background: #eaf1e6;
+    border: 1px solid #dce8d9;
+    border-radius: 16px;
+    padding: 17px 20px
+}
+
+.expiry-banner>span {
+    font-size: 24px;
+    color: #709474
+}
+
+.expiry-banner b {
+    font-size: 15px
+}
+
+.expiry-banner p {
+    font-size: 11px;
+    color: #778674
+}
+
+.expiry-columns {
+    grid-template-columns: 1fr 280px;
+    gap: 20px
+}
+
+.expiry-list {
+    border-radius: 17px;
+    background: #fffefa;
+    border-color: #e8e8df;
+    padding: 8px 18px
+}
+
+.expiry-item {
+    padding: 14px 0
+}
+
+.expiry-item img {
+    width: 62px;
+    height: 62px;
+    border-radius: 13px
+}
+
+.expiry-item b {
+    font-size: 13px
+}
+
+.expiry-item small {
+    font-size: 10px
+}
+
+.tip-card {
+    background: #edf2e8;
+    border: 1px solid #e0e9dc;
+    border-radius: 18px;
+    transform: none;
+    padding: 18px
+}
+
+.tip-label {
+    font-size: 9px;
+    letter-spacing: 1.3px;
+    color: #7c987c;
+    font-weight: 700
+}
+
+.tip-illustration {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 15px 0 12px
+}
+
+.tip-card h3 {
+    font-size: 19px
+}
+
+.tip-card p {
+    font-size: 11px;
+    color: #788477
+}
+
+#page-shopping .page-intro {
+    align-items: center
+}
+
+.shopping-hero-image {
+    width: 330px;
+    height: 165px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow)
+}
+
+.shopping-layout {
+    grid-template-columns: 1fr 260px;
+    gap: 22px
+}
+
+.shopping-paper {
+    background: #fffefa;
+    border: 1px solid #e6e6dc;
+    border-radius: 18px;
+    padding: 23px 25px;
+    box-shadow: var(--shadow)
+}
+
+.shopping-paper:before {
+    display: none
+}
+
+.paper-top {
+    border-bottom: 1px solid #e9e9df;
+    color: #68866d;
+    font-size: 20px
+}
+
+.paper-top strong {
+    font: 600 22px var(--serif);
+    color: #4e554a
+}
+
+.paper-top span {
+    font-size: 20px
+}
+
+.add-item input {
+    background: #f9faf5;
+    border-color: #e6e9df;
+    border-radius: 11px;
+    font-size: 12px
+}
+
+.shopping-items {
+    min-height: 220px
+}
+
+.shopping-item {
+    padding: 13px 5px;
+    border-bottom: 1px solid #eff0e9
+}
+
+.shopping-item span {
+    font-size: 13px
+}
+
+.shopping-item input {
+    width: 18px;
+    height: 18px
+}
+
+.shopping-side {
+    background: #edf2e8;
+    border: 1px solid #e0e9dc;
+    border-radius: 18px;
+    transform: none;
+    padding: 16px
+}
+
+.side-illustration {
+    height: 145px;
+    border-radius: 13px;
+    overflow: hidden
+}
+
+.side-illustration img {
+    object-fit: cover
+}
+
+.shopping-side h3 {
+    font: 600 20px var(--serif);
+    margin: 15px 0 6px
+}
+
+.shopping-side p {
+    font-size: 11px;
+    color: #778477
+}
+
+.shopping-footer {
+    font-size: 10px;
+    color: #8c8e80
+}
+
+.recipe-cover {
+    background: #e8f0e7;
+    border-radius: 22px;
+    padding: 30px 34px;
+    grid-template-columns: 1fr .9fr;
+    gap: 25px;
+    min-height: 280px
+}
+
+.recipe-cover h1 em {
+    color: #719477
+}
+
+.recipe-cover p {
+    font-size: 13px;
+    color: #758275
+}
+
+.recipe-cover-art {
+    transform: none;
+    margin: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #dce8d9
+}
+
+.recipe-cover-art img {
+    object-fit: cover
+}
+
+.scrapbook-spread {
+    grid-template-columns: .7fr 1.3fr;
+    gap: 18px
+}
+
+.spread-left {
+    background: #f5eee0;
+    border: 1px solid #e9e1d2;
+    border-radius: 17px;
+    box-shadow: none;
+    padding: 22px
+}
+
+.spread-left h2 {
+    font-size: 25px
+}
+
+.spread-left p {
+    font-size: 12px;
+    color: #827e70
+}
+
+.spread-photo {
+    height: 185px;
+    border-radius: 13px;
+    margin-top: 12px
+}
+
+.spread-right {
+    border-radius: 18px;
+    background: #fffefa;
+    border-color: #e8e8df;
+    padding: 20px
+}
+
+.recipe-grid {
+    gap: 14px
+}
+
+.recipe-card {
+    background: #f3f5ed;
+    border: 1px solid #e8ebdf;
+    border-radius: 15px;
+    padding: 9px
+}
+
+.recipe-card img {
+    height: 145px;
+    border-radius: 11px
+}
+
+.recipe-card h3 {
+    font-size: 16px;
+    margin: 10px 4px 5px
+}
+
+.recipe-card p {
+    font-size: 11px
+}
+
+.match-tag {
+    background: #e1eee1;
+    color: #5e805f;
+    font-size: 9px
+}
+
+.planner-paper {
+    background: #fffefa;
+    border: 1px solid #e8e7dc;
+    border-radius: 19px;
+    padding: 24px;
+    box-shadow: var(--shadow)
+}
+
+.planner-kicker {
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    color: #819a7e;
+    font-weight: 700
+}
+
+.planner-heading h2 {
+    font-size: 28px
+}
+
+.meal-table th {
+    background: #eaf1e7;
+    color: #607b63;
+    font-size: 11px
+}
+
+.meal-table td {
+    border-color: #e8e8df
+}
+
+.meal-table td:first-child {
+    background: #f4f1e7;
+    color: #7a8068
+}
+
+.meal-input {
+    font-size: 12px
+}
+
+.planner-foot {
+    font: 12px var(--sans);
+    color: #8b8b7c
+}
+
+.usage-layout {
+    gap: 18px
+}
+
+.usage-form label {
+    font-size: 11px
+}
+
+.usage-form input,
+.usage-form select {
+    font-size: 12px;
+    background: #fafbf7;
+    border-color: #e5e8df
+}
+
+.history-row {
+    font-size: 12px
+}
+
+.account-card {
+    background: #eaf1e7;
+    border: 1px solid #dfe8dc;
+    border-radius: 18px
+}
+
+.account-note {
+    margin-top: 18px
+}
+
+.hand {
+    font-family: var(--sans);
+    font-weight: 600
+}
+
+.sidebar-note {
+    display: none
+}
+
+.page-footer {
+    font: 10px var(--sans);
+    letter-spacing: 1px;
+    color: #9b9c8d
+}
+
+.big-doodle,
+.shopping-doodle,
+.welcome-stickers,
+.art-sun,
+.spark,
+.shelf,
+.art-caption,
+.recipe-cover-art .hand,
+.ingredient-pile,
+.match-note,
+.tape {
+    display: none !important
+}
+

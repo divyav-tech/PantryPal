@@ -1,0 +1,91 @@
+@media(max-width:1000px) {
+    .main-area {
+        padding-left: 28px;
+        padding-right: 28px
+    }
+
+    .inventory-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+
+    .welcome-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .pantry-photo {
+        height: 300px
+    }
+}
+
+@media(max-width:760px) {
+    .main-area {
+        padding: 0 16px 20px
+    }
+
+    .welcome-grid {
+        grid-template-columns: 1fr
+    }
+
+    .pantry-photo {
+        height: 240px
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .inventory-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .page-intro {
+        align-items: flex-start
+    }
+
+    .intro-photo {
+        width: 115px;
+        height: 100px
+    }
+
+    .shopping-hero-image {
+        width: 125px;
+        height: 100px
+    }
+
+    .shopping-layout,
+    .expiry-columns,
+    .scrapbook-spread,
+    .usage-layout {
+        grid-template-columns: 1fr
+    }
+
+    .shopping-side {
+        max-width: none
+    }
+
+    .recipe-cover {
+        grid-template-columns: 1fr;
+        padding: 22px
+    }
+
+    .recipe-cover-art {
+        height: 165px
+    }
+
+    .recipe-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .recipe-card img {
+        height: 110px
+    }
+
+    .meal-table {
+        min-width: 580px
+    }
+
+    .page-footer {
+        font-size: 9px
+    }
+}
+

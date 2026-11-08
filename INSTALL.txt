@@ -1,0 +1,22 @@
+PANTRYPAL – UPDATED INSTALLATION
+
+1. Copy this folder to C:\xampp\htdocs\pantrypal.
+2. Start Apache and MySQL in XAMPP.
+3. Open http://localhost/phpmyadmin and select the existing pantrypal_db database.
+4. Back up the database first.
+5. Execute database/migration_001_meal_plans.sql and database/migration_002_recipes.sql in phpMyAdmin > pantrypal_db > SQL.
+   These create meal_plans and the saved Recipe Book table. shopping_items.category_id already exists in the supplied schema.
+6. Check config/db.php for your local MySQL username/password.
+7. Open http://localhost/pantrypal/ and log in.
+
+Do not re-import the original database export into a database containing user data.
+
+Active app entry point: index.php
+Main stylesheet: assets/css/style.css (imports the modular CSS files)
+Frontend JavaScript: assets/js/app.js
+APIs: api/products.php, api/shopping.php, api/meal-plans.php, api/recipes.php (TheMealDB)
+
+See README.md for feature details, testing checklist and viva explanations.
+
+TESTING NOTE:
+PHP/JavaScript syntax, CSS import targets, HTML duplicate IDs, and unauthenticated API protection were checked. Full MySQL CRUD testing must still be performed on the local XAMPP installation.

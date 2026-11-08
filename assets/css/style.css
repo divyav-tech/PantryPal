@@ -1,0 +1,21 @@
+/* Main stylesheet entry point. Import order preserves the original Scrapbook UI v2 cascade. */
+@import url("variables.css");
+@import url("core.css");
+@import url("responsive-core.css");
+@import url("scrapbook-theme.css");
+@import url("responsive-theme.css");
+@import url("scrapbook-components.css");
+@import url("responsive.css");
+@import url("features.css");
+
+@import url("polish.css");
+
+
+/* Recipe discovery filters */
+.recipe-filter-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:22px 0 8px;padding:12px 16px;background:#f7ecdf;border:1px dashed #e7cdb8;border-radius:18px;width:fit-content;max-width:100%}
+.recipe-filter-label{font-size:.82rem;font-weight:700;color:#765b4b;margin-right:3px}
+.recipe-filter{border:1px solid #e6cbb6;background:#fffaf4;color:#765b4b;border-radius:999px;padding:9px 16px;font:inherit;font-size:.86rem;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.recipe-filter:hover{transform:translateY(-1px);border-color:#d98b70}
+.recipe-filter.is-active{background:#e4eddf;border-color:#9eae91;color:#405b46;box-shadow:inset 0 0 0 1px #fff}
+.recipe-filter:focus-visible{outline:2px solid #b8795e;outline-offset:3px}
+@media(max-width:600px){.recipe-filter-row{width:100%;gap:7px}.recipe-filter{padding:8px 11px;font-size:.8rem}}

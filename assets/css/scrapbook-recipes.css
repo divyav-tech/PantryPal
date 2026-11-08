@@ -1,0 +1,165 @@
+/* Integrated Scrapbook Recipe Book CSS */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kalam:wght@400;700&family=Nunito:wght@400;600;700&display=swap');
+
+:root {
+    --paper-bg: #fefbf3;
+    --polaroid-shadow: 0 8px 20px rgba(0,0,0,0.1), 0 3px 8px rgba(0,0,0,0.05);
+    --tape-color: rgba(244, 211, 94, 0.7);
+    --font-handwriting: 'Caveat', cursive;
+    --font-heading: 'Kalam', cursive;
+}
+
+.scrapbook-container {
+    background-color: var(--paper-bg);
+    background-image: radial-gradient(#e0d6c3 1px, transparent 0);
+    background-size: 24px 24px;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #efebe9;
+}
+
+.scrapbook-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.scrapbook-title {
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    color: #3e2723;
+    display: inline-block;
+    position: relative;
+    padding: 0.4rem 1.2rem;
+}
+
+.scrapbook-title::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #ffecb3;
+    transform: rotate(-1.2deg);
+    z-index: -1;
+    border-radius: 4px;
+    box-shadow: 2px 3px 6px rgba(0,0,0,0.06);
+}
+
+.scrapbook-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.8rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.polaroid-card {
+    background: #ffffff;
+    padding: 12px 12px 20px 12px;
+    box-shadow: var(--polaroid-shadow);
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid #efebe9;
+    cursor: pointer;
+}
+
+.polaroid-card:nth-child(4n+1) { transform: rotate(-1.8deg); }
+.polaroid-card:nth-child(4n+2) { transform: rotate(1.2deg); }
+.polaroid-card:nth-child(4n+3) { transform: rotate(-1deg); }
+.polaroid-card:nth-child(4n+4) { transform: rotate(2deg); }
+
+.polaroid-card:hover {
+    transform: scale(1.03) rotate(0deg) !important;
+    z-index: 10;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.polaroid-card::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 80px;
+    height: 22px;
+    background-color: var(--tape-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    z-index: 2;
+    opacity: 0.85;
+}
+
+.polaroid-img-wrapper {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.polaroid-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.polaroid-caption {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.polaroid-caption h3 {
+    font-family: var(--font-handwriting);
+    font-size: 1.6rem;
+    color: #2c1810;
+    margin: 0 0 4px 0;
+    line-height: 1.2;
+}
+
+.scrapbook-tag {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    background: #e8f5e9;
+    color: #2e7d32;
+    border-radius: 10px;
+    border: 1px dashed #81c784;
+}
+
+.recipe-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(44, 24, 16, 0.65);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.recipe-modal.active {
+    display: flex;
+}
+
+.recipe-journal-page {
+    background: #fffdf9;
+    max-width: 720px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 2rem;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    border-left: 6px solid #d7ccc8;
+    border-radius: 4px;
+}
+
+.close-modal-btn {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #5d4037;
+}
