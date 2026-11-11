@@ -64,7 +64,7 @@ if (!isset($_SESSION["user_id"])) {
                             class="primary-btn" data-go="pantry">Explore my pantry <span>→</span></button>
                     </div>
                     <div class="pantry-photo photo-frame"><img
-                            src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?w=1200&h=900&fit=crop"
+                            src="assets/images/PantryPal.png"
                             alt="A warm, organised kitchen pantry shelf">
                         <div class="photo-caption"><span>YOUR KITCHEN, YOUR WAY</span><b>A pantry full of
                                 possibilities.</b></div>
@@ -136,7 +136,7 @@ if (!isset($_SESSION["user_id"])) {
                         <p>Everything you have, all in one little place.</p>
                     </div>
                     <div class="intro-photo pantry-intro-photo"><img
-                            src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?w=700&h=450&fit=crop"
+                            src="assets/images/basket.png"
                             alt="Organised pantry shelves"></div><button class="primary-btn" id="addProductBtn">＋ Add a
                         product</button>
                 </div>
@@ -170,7 +170,7 @@ if (!isset($_SESSION["user_id"])) {
                         <p>Give these ingredients a starring role before their time is up.</p>
                     </div>
                     <div class="intro-photo expiry-photo"><img
-                            src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=420&fit=crop"
+                            src="assets/images/kitchen.png"
                             alt="Fresh vegetables ready to use"></div>
                 </div>
                 <div class="expiry-banner"><span><i class="fa-solid fa-leaf"></i></span>
@@ -184,7 +184,7 @@ if (!isset($_SESSION["user_id"])) {
                         <div id="expiryList" class="expiry-list"></div>
                     </div>
                     <aside class="tip-card"><span class="tip-label">PANTRY TIP</span><img class="tip-illustration"
-                            src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop"
+                            src="assets/images/use-it-soon.png"
                             alt="Fresh vegetables">
                         <h3>Store smart, waste less.</h3>
                         <p>Keep foods that need using soon at eye level in your fridge. A tiny reminder can make a big
@@ -200,7 +200,7 @@ if (!isset($_SESSION["user_id"])) {
                         <p>Your little checklist for the next grocery run.</p>
                     </div>
                     <div class="shopping-hero-image"><img
-                            src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=900&h=600&fit=crop"
+                            src="assets/images/recipes.png"
                             alt="Fresh groceries in a shopping basket"></div>
                 </div>
                 <div class="shopping-layout">
@@ -361,7 +361,7 @@ if (!isset($_SESSION["user_id"])) {
                         <p>Keep your PantryPal details up to date.</p>
                     </div>
                     <div class="intro-photo account-photo"><img
-                            src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&h=420&fit=crop"
+                            src="assets/images/kitchen.png"
                             alt="A bright, welcoming kitchen"></div>
                 </div>
                 <div class="account-card">
